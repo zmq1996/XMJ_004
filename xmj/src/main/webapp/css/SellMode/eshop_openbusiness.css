@@ -1,0 +1,1234 @@
+body {
+    font-size: 12px
+}
+
+a {
+    color: #0579c6
+}
+
+.verify-task {
+    width: 825px;
+    margin-left: 13px;
+    border: 1px solid #c4d5df
+}
+
+.verify-task h3 {
+    text-indent: -9999px;
+    width: 100%;
+    height: 38px;
+/*     background: url(//img.alicdn.com/tps/i1/T1I5SkXnpwXXXXXXXX-825-38.jpg) 0 0 no-repeat
+ */}
+
+.verify-task .verify-box {
+    margin: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c4d5df
+}
+
+.verify-box h4 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.verify-box .verify-intro {
+    margin-bottom: 15px
+}
+
+.verify-box .verify-intro a {
+    text-decoration: none
+}
+
+.verify-box .start-verify,
+.verify-box .start-exam,
+.verify-box .fill-shopinfo,
+.shop-verify .read-more,
+.exam-online .exam-again,
+.alipay-verify .open-guide .open,
+.sub-menu .guide .back a,
+.photo-verify .id-photo a,
+.photo-verify .body-photo a,
+.photo-verify .submit-photo {
+    text-indent: -9999px
+}
+
+.verify-task .shop-info {
+    border-bottom: 0
+}
+
+.shop-verify .start-verify {
+    display: block;
+    width: 98px;
+    height: 25px;
+/*     background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -25px no-repeat
+ */}
+
+.exam-online .start-exam {
+    display: block;
+    width: 98px;
+    height: 25px;
+/*     background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 0 no-repeat
+ */}
+
+.shop-info .fill-shopinfo {
+    display: block;
+    width: 118px;
+    height: 25px;
+/*     background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -50px no-repeat
+ */}
+
+.verify-box .verify-status {
+    width: 100%;
+    overflow: hidden
+}
+
+.verify-box .unfinished {
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    color: #f39a00;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.verify-box .finished {
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    color: #158308;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.verify-box .verify-status s {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    width: 18px;
+    height: 17px;
+    line-height: 17px;
+/*     background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -210px no-repeat
+ */}
+
+.shop-verify .read-more,
+.exam-online .exam-again {
+    display: block;
+    float: left;
+    width: 96px;
+    height: 25px;
+    margin-left: 10px;
+/*     background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) no-repeat
+ */}
+
+.shop-verify .read-more {
+    background-position: 0 -80px
+}
+
+.exam-online .exam-again {
+    background-position: 0 -105px
+}
+
+.verify-step {
+    width: 823px
+}
+
+.verify-step a {
+    text-decoration: none
+}
+
+.sub-menu {
+    width: 823px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #c4d5df;
+    margin-bottom: 10px
+}
+
+.sub-menu .crumbs {
+    margin-left: 10px;
+    font-weight: 700
+}
+
+.sub-menu .crumbs a {
+    font-weight: normal;
+    text-decoration: none
+}
+
+.sub-menu .guide {
+    float: right;
+    margin-top: -30px
+}
+
+.sub-menu .guide li {
+    list-style: none;
+    float: left;
+    margin: 0 10px
+}
+
+.sub-menu .guide li a {
+    display: block;
+    text-decoration: none
+}
+
+.sub-menu .guide .back {
+    width: 120px;
+    height: 30px;
+    line-height: 30px
+}
+
+.sub-menu .guide .back a {
+    display: block;
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    margin: 4px 0;
+    text-indent: -9999px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -296px no-repeat
+}
+
+.alipya-verify {
+    margin-bottom: 15px
+}
+
+.alipay-verify h4,
+.photo-verify h4 {
+    font-weight: 700;
+    height: 22px;
+    line-height: 22px;
+    width: 815px;
+    border-top: 1px solid #c4d5df;
+    padding-left: 10px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -270px repeat-x
+}
+
+.alipay-verify .status {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px 20px 20px 40px
+}
+
+.alipay-verify .status i {
+    display: block;
+    float: left;
+    width: 43px;
+    height: 32px;
+    margin-right: 15px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -230px no-repeat
+}
+
+.alipay-verify .status .unfinished {
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.alipay-verify .status s {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    margin-top: 6px;
+    width: 18px;
+    height: 17px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -210px no-repeat
+}
+
+.alipay-verify .status .finished {
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #158308
+}
+
+.alipay-verify .open-guide {
+    margin-left: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 10px 20px
+}
+
+.alipay-verify .open-guide .open {
+    display: block;
+    float: left;
+    width: 148px;
+    height: 25px;
+    margin-right: 10px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -130px no-repeat
+}
+
+.alipay-verify .open-guide .hk-open {
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px
+}
+
+.alipay-verify .how {
+    margin: 0 0 20px 20px
+}
+
+.photo-verify .status {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 20px 0 40px
+}
+
+.photo-verify .status i {
+    width: 43px;
+    height: 32px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) -43px -230px no-repeat
+}
+
+.photo-verify .unfinished {
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    color: #f39a00;
+    font-size: 14px
+}
+
+.photo-verify .undo {
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px
+}
+
+.photo-verify .undo em {
+    color: #f00;
+    font-style: normal
+}
+
+.photo-verify .status-info {
+    display: block;
+    clear: both;
+    margin: 5px 0 5px 53px
+}
+
+.photo-verify .id-photo {
+    display: block;
+    margin-left: 93px;
+    margin-top: 20px;
+    width: 728px;
+    height: 155px;
+    overflow: hidden
+}
+
+.photo-verify .id-photo span {
+    margin-right: 10px;
+    display: block;
+    float: left
+}
+
+.photo-verify .id-photo img {
+    float: left;
+    display: block;
+    margin-right: 100px;
+    height: 80px;
+    width: 80px
+}
+
+.photo-verify .id-photo a img {
+    height: 120px;
+    width: 120px
+}
+
+.photo-verify .id-photo input {
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    display: block;
+    float: left;
+    position: relative;
+    left: -87px;
+    top: 84px;
+    width: 76px;
+    padding: 2px 10px
+}
+
+.photo-verify .id-photo button {
+    background: url("//img.alicdn.com/tps/i3/T1ZzikXftuXXXXXXXX-148-318.jpg") no-repeat scroll 0 -180px transparent;
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 85px 0 0 -87px;
+    text-indent: -9999px;
+    width: 76px
+}
+
+.photo-verify .update-tip {
+    display: block;
+    clear: both;
+    line-height: 20px;
+    color: #999;
+    margin: 6px 0 10px 216px
+}
+
+.photo-verify .update-tip span {
+    display: block
+}
+
+.photo-verify .update-tip em {
+    color: #f39a00
+}
+
+.photo-verify .body-photo {
+    display: block;
+    margin-left: 154px;
+    width: 668px;
+    height: 155px;
+    overflow: hidden
+}
+
+.photo-verify .body-photo span {
+    margin-right: 10px;
+    display: block;
+    float: left
+}
+
+.photo-verify .body-photo img {
+    float: left;
+    display: block;
+    margin-right: 100px;
+    height: 80px;
+    width: 80px
+}
+
+.photo-verify .body-photo a img {
+    height: 120px;
+    width: 120px
+}
+
+.photo-verify .body-photo a img {
+    height: 120px;
+    width: 120px
+}
+
+.photo-verify .body-photo input {
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    display: block;
+    float: left;
+    position: relative;
+    left: -87px;
+    top: 84px;
+    width: 76px;
+    padding: 2px 10px
+}
+
+.photo-verify .body-photo button {
+    background: url("//img.alicdn.com/tps/i3/T1ZzikXftuXXXXXXXX-148-318.jpg") no-repeat scroll 0 -180px transparent;
+    border: 0 none;
+    display: block;
+    float: left;
+    height: 20px;
+    margin: 85px 0 0 -87px;
+    text-indent: -9999px;
+    width: 76px
+}
+
+.photo-verify .submit-photo {
+    display: block;
+    float: left;
+    margin: 20px 0 0 210px;
+    border: 0;
+    height: 25px;
+    width: 101px;
+    background: url(//img.alicdn.com/tps/i1/T1nj5lXfXyXXXXXXXX-148-318.jpg) 0 -155px no-repeat
+}
+
+#chose-id-photo,
+#chose-body-photo {
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.upload-id,
+.upload-body {
+    position: absolute
+}
+
+.uploadimg {
+    cursor: pointer;
+    width: 76px;
+    height: 20px;
+    overflow: hidden
+}
+
+.uploadimg .upload-btn {
+    display: block;
+    border: 0;
+    float: left;
+    width: 76px;
+    height: 20px;
+    background: url("//img.alicdn.com/tps/i3/T1ZzikXftuXXXXXXXX-148-318.jpg") no-repeat scroll 0 -180px transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.upload-id-img,
+.upload-body-img {
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 76px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer
+}
+
+.photo-verify .id-photo .id-img-err {
+    display: none;
+    clear: both;
+    width: 200px;
+    margin-left: 126px;
+    _margin-left: 63px;
+    margin-top: 10px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+    color: #404040;
+    border: 1px solid #ff8080;
+    background: #fff2f2
+}
+
+.photo-verify .id-photo .id-img-err i,
+.photo-verify .body-photo .body-img-err i,
+.photo-verify .form-err i {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 1px;
+    background: url(//img.alicdn.com/tps/i1/T1F6GnXeNZXXXXXXXX-16-16.jpg) 0 0 no-repeat
+}
+
+.photo-verify .body-photo .body-img-err {
+    display: none;
+    clear: both;
+    width: 200px;
+    margin-top: 10px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+    color: #404040;
+    border: 1px solid #ff8080;
+    background: #fff2f2;
+    margin-left: 64px;
+    _margin-left: 32px
+}
+
+.photo-verify .form-err {
+    display: none;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 10px 0 3px;
+    color: #404040;
+    border: 1px solid #ff8080;
+    background: #fff2f2;
+    margin: 20px 0 0 20px
+}
+
+.photo-verify .form-err i {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 2px;
+    background: url(//img.alicdn.com/tps/i1/T1F6GnXeNZXXXXXXXX-16-16.jpg) 0 0 no-repeat
+}
+
+.clear {
+    display: block;
+    clear: both
+}
+
+.shop-information {
+    width: 700px;
+    margin-left: 13px;
+    position: relative
+}
+
+.shop-information a {
+    text-decoration: none;
+    color: #36C
+}
+
+.shop-information .top-tip {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0 10px 10px
+}
+
+.shop-information .info-tip {
+    display: block;
+    float: left;
+    border: 1px solid #f39a00;
+    margin-left: 10px;
+    padding: 2px 10px 2px 6px;
+    background: #ffffe5;
+    margin-top: 2px
+}
+
+.shop-information .info-tip i {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 12px;
+    margin: 2px 6px 0 0;
+}
+
+.form-info .ml {
+    width: 100%;
+    overflow: hidden
+}
+
+.form-info .ml2 {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 130px
+}
+
+.form-info ml3 {
+    width: 100%;
+    overflow: hidden;
+    height: 122px
+}
+
+.form-info .ml4,
+.form-info .ml5 {
+    width: 100%;
+    overflow: hidden;
+    display: none
+}
+
+.form-info .addr-exp {
+    float: left
+}
+
+.form-info .text1 {
+    width: 196px;
+    height: 18px;
+    line-height: 18px
+}
+
+.form-info .text2 {
+    width: 200px;
+    height: 22px;
+    line-height: 22px
+}
+
+.form-info .text3 {
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    display: block;
+    float: left
+}
+
+.form-info .text4 {
+    width: 360px;
+    height: 18px;
+    line-height: 18px;
+    display: block
+}
+
+.form-info li {
+    margin: 0 0 8px 0;
+    padding-top: 6px
+}
+
+.form-info .item-name {
+    width: 120px;
+    margin-right: 10px;
+    text-align: right;
+    height: 22px;
+    line-height: 22px;
+    float: left
+}
+
+.form-info .item-name em {
+    color: #f00;
+    font-style: normal
+}
+
+.form-info .sh-name {
+    float: left;
+    width: 200px
+}
+
+.form-info .shop-photo {
+    float: left;
+    width: 452px
+}
+
+.form-info .shop-pic {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    display: block
+}
+
+.form-info .upload-con {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 80px
+}
+
+.upload {
+    position: absolute;
+    top: 280px;
+    left: 143px;
+    cursor: pointer;
+    width: 76px;
+    height: 25px;
+    overflow: hidden
+}
+
+.upload .upload-btn {
+    display: block;
+    border: 0;
+    float: left;
+    width: 76px;
+    height: 25px;
+    background: url(/xmj/image/SellMode/T1tK49XiBDXXXXXXXX-76-110.png) 0 -46px no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.upload .upload-btn em {
+    width: 76px;
+    height: 25px;
+    line-height: 25px;
+    display: block;
+    text-align: center;
+    cursor: pointer
+}
+
+.form-info .sh-category {
+    float: left
+}
+
+.form-info .sh-style {
+    display: block;
+    float: left
+}
+
+.form-info .location-detail {
+    display: block;
+    float: left;
+    width: 364px
+}
+
+.form-info .zip-code {
+    float: left
+}
+
+.form-info .sh-edit {
+    display: block;
+    float: left;
+    width: 500px
+}
+
+.form-info .sh-edit .edit {
+    width: 500px;
+    height: 280px;
+    resize: none
+}
+
+.form-info .source-item {
+    display: block;
+    float: left;
+    height: 50px;
+    overflow: hidden
+}
+
+.form-info .source-item p {
+    height: 30px;
+    line-height: 30px
+}
+
+.form-info .source-item input {
+    display: block;
+    float: left;
+    margin-top: 3px
+}
+
+.form-info .source-item label {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 20px 0 2px;
+    *margin-top: 2px
+}
+
+.form-info .ifshop {
+    float: left
+}
+
+.form-info .ifshop input {
+    display: block;
+    float: left;
+    margin-top: 3px
+}
+
+.form-info .ifshop label {
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 6px
+}
+
+.form-info .ml2 input {
+    margin-right: 4px
+}
+
+.form-info .ml2 input,
+.form-info .ml2 label {
+    display: block;
+    float: left
+}
+
+.form-info .form-save {
+       width: 54px;
+    height: 23px;
+    border: 0;
+    color: #fff;
+    background: url(/xmj/image/SellMode/T1tK49XiBDXXXXXXXX-76-110.png) 0 0 no-repeat;
+}
+
+.form-info .form-save:hover {
+    background-position: 0 -23px
+}
+
+.simulate_upload {
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 76px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer
+}
+
+.erro-tip {
+    width: 823px;
+    border: 1px solid #f39a00;
+    background: #ffffe5;
+    margin-left: 13px
+}
+
+.erro-tip .tip-title {
+    width: 600px;
+    overflow: hidden;
+    padding: 15px 30px
+}
+
+.erro-tip i {
+    background: url(//img.alicdn.com/tps/i2/T1nsKjXjdbXXXXXXXX-25-33.jpg) 0 0 no-repeat;
+    width: 25px;
+    height: 33px;
+    display: block;
+    float: left
+}
+
+.erro-tip h4 {
+    height: 33px;
+    line-height: 33px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-left: 10px
+}
+
+.erro-tip .tip-detail {
+    margin-left: 65px;
+    margin-bottom: 15px
+}
+
+.imagespace {
+    width: 680px;
+    height: 0;
+    overflow: hidden;
+    position: relative
+}
+
+.imagespace .image,
+.imagespace .flash {
+    width: 680px
+}
+
+.imagespace .image,
+.imagespace .flash {
+    position: absolute;
+    left: -9999px
+}
+
+.status-unverified {
+    margin: 10px 0 15px;
+    padding: 10px 30px 10px 80px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #f60
+}
+
+.status-unverified em {
+    float: left;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f60
+}
+
+.alipay-verify .status-unverified {
+    background: #ffc url(//img.alicdn.com/tps/i3/T1HxKKXgRhXXXXXXXX-42-30.png) no-repeat scroll 30px 50%
+}
+
+.photo-verify .status-unverified {
+    background: #ffc url(//img.alicdn.com/tps/i2/T1yxKKXhthXXXXXXXX-41-30.png) no-repeat scroll 30px 50%
+}
+
+ .basic-form {
+        height: 200px;
+    }
+    
+    .basic-form .form-list .main-sources {
+        float: left;
+        height: 20px;
+        text-align: left;
+        vertical-align: middle;
+    }
+    
+    .basic-form .form-list label.main-sources {
+        width: 80px;
+        margin-left: 2px;
+    }
+    
+    #secondGroup,
+    #thirdGroup {
+        clear: left;
+    }
+    </style>
+    <style>
+    .shop-information .info-muted {
+        margin-left: 85px;
+        border-color: #ddd;
+        background: #fafafa;
+    }
+    
+    .shop-information .form-label {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    .shop-information .form-label-business {
+        font-size: 13px;
+        font-weight: bold;
+        border-top: 1px dashed #ccc;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    
+    .shop-information .business-term input {
+        display: inline-block;
+    }
+    
+    .shop-information .business-term-long {
+        margin: 0 3px;
+    }
+    
+    .shop-information .seller-type {
+        width: 550px;
+        float: left;
+    }
+    
+    .shop-information .seller-type .sh-style {
+        float: none;
+        padding-left: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .shop-information .seller-type .sh-style input {
+        margin-left: -20px;
+        margin-right: 5px;
+    }
+    
+    .shop-information .desc-tip {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .g-robot-e .service-question-list li,
+    .g-robot-e .close-btn,
+    .g-robot-e .panel-corner {
+        background-image: url(//gtd.alicdn.com/tps/i4/T1tQrSXjJhXXctBpjk-58-40.png);
+        background-repeat: no-repeat;
+    }
+    
+    .g-robot-e {
+        position: fixed;
+        _position: absolute;
+        right: 100px;
+        bottom: 20%;
+        width: 75px;
+        height: 84px;
+        z-index: 10002;
+    }
+    
+    .g-robot-e:after {
+        content: "0";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    .g-robot-e .tao-doll {
+        display: block;
+        position: relative;
+        width: 75px;
+        height: 84px;
+        background-image: url(//gtd.alicdn.com/tps/i3/T18ovTXo4XXXc.pmjn-75-84.png);
+        background-position: 0 0;
+        _background: none;
+        _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src="//gtd.alicdn.com/tps/i3/T18ovTXo4XXXc.pmjn-75-84.png", sizingMethod="image");
+        cursor: move;
+    }
+    
+    .g-robot-e .service-question-list-wrap {
+        position: absolute;
+        bottom: 52px;
+        right: 17px;
+        padding: 12px 12px;
+        background-color: #fff3da;
+        border: 1px solid #fbcfac;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    
+    .g-robot-e .service-question-list-wrap h3 {
+        width: 190px;
+        margin: 0 0 0 3px;
+        position: relative;
+    }
+    
+    .g-robot-e .service-question-list-wrap h3 .other-question {
+        margin-left: 5px;
+        color: #5382AA;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+    .g-robot-e .service-question-list-wrap h3 .other-question:hover {
+        text-decoration: underline;
+        color: #F60;
+    }
+    
+    .g-robot-e .service-question-list-wrap h3 .entry-title {
+        font-size: 18px;
+        color: #333;
+        text-decoration: none;
+        font-family: "\5fae\8f6f\96c5\9ed1,\9ed1\4f53";
+        cursor: default;
+        outline: none;
+    }
+    
+    .g-robot-e .service-question-list-wrap h3 .entry-title:hover {
+        opacity: 1;
+        text-decoration: none;
+    }
+    
+    .g-robot-e .service-question-list-wrap .panel-corner {
+        display: block;
+        position: absolute;
+        width: 41px;
+        height: 24px;
+        right: 60px;
+        bottom: -24px;
+        _font-size: 0;
+        background-position: 0 -13px;
+    }
+    
+    .g-robot-e .service-question-list {
+        position: relative;
+        margin: 5px 0 0 0;
+        width: 193px;
+        height: 145px;
+        overflow: hidden;
+    }
+    
+    .g-robot-e .service-question-list ul {
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .g-robot-e .service-question-list ul li {
+        width: 185px;
+        overflow: hidden;
+        padding: 5px 0 1px 8px;
+        background-position: -52px -18px;
+    }
+    
+    .g-robot-e .service-question-list ul li a {
+        color: #5382AA;
+        text-decoration: none;
+    }
+    
+    .g-robot-e .service-question-list ul li a:hover {
+        color: #f60;
+        text-decoration: underline;
+    }
+    
+    .g-robot-e .service-question-list ul li a strong {
+        font-weight: normal;
+        color: red;
+    }
+    
+    .g-robot-e .close-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 8px;
+        height: 9px;
+        padding: 3px;
+        background-position: -35px 3px;
+        text-decoration: none;
+    }
+    
+    .g-robot-e .close-btn:hover {
+        background-position: -48px 3px;
+        text-decoration: none;
+    }
+    
+    .g-robot-e .service-question-list-wrap-closed {
+        padding: 0 0 8px 0;
+        right: 42px;
+    }
+    
+    .g-robot-e .service-question-list-wrap-closed h3 .other-question,
+    .g-robot-e .service-question-list-wrap-closed .service-question-list,
+    .g-robot-e .service-question-list-wrap-closed .close-btn {
+        display: none;
+    }
+    
+    .g-robot-e .service-question-list-wrap-closed h3 {
+        margin: 0;
+        width: 26px;
+        padding: 10px 0 8px;
+        text-align: center;
+    }
+    
+    .g-robot-e .service-question-list-wrap-closed h3 .entry-title {
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .g-robot-e .service-question-list-wrap-closed h3 .entry-title:hover {
+        opacity: 0.8;
+    }
+    
+    .g-robot-e .service-question-list-wrap-closed .panel-corner {
+        width: 8px;
+        height: 9px;
+        right: 12px;
+        bottom: -9px;
+        background-position: 0 0;
+    }
+    
+    .g-robot-e .hidden {
+        display: none !important;
+    }
+    
+    .service-dd-mask {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        cursor: move;
+        position: fixed;
+        z-index: 999999;
+    }
+    </style>
+    <style id="ke-color-plugin">
+    .ke-color-panel a {
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .ke-color-panel a:hover {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .ke-color-panel a:active {
+        color: black;
+    }
+    
+    .ke-color-palette {
+        margin: 5px 8px 8px;
+    }
+    
+    .ke-color-palette table {
+        border: 1px solid #666666;
+        border-collapse: collapse;
+    }
+    
+    .ke-color-palette td {
+        border-right: 1px solid #666666;
+        height: 18px;
+        width: 18px;
+    }
+    
+    a.ke-color-a {
+        height: 18px;
+        width: 18px;
+    }
+    
+    a.ke-color-a:hover {
+        border: 1px solid #ffffff;
+        height: 16px;
+        width: 16px;
+    }
+    
+    a.ke-color-remove {
+        padding: 3px 8px;
+        margin: 2px 0 3px 0;
+    }
+    
+    a.ke-color-remove:hover {
+        background-color: #D6E9F8;
+    }

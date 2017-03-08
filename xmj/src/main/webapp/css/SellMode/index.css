@@ -1,0 +1,43 @@
+.shop-settings-wrapper {
+	width: 988px;
+	border: 1px solid #E0E0E0;
+	border-bottom: none;
+	padding-bottom: 15px
+}
+
+.shop-settings-wrapper .shop-settings-tabs {
+	height: 28px;
+	line-height: 28px;
+	width: 950px;
+	margin: 20px auto 0;
+	border-bottom: 3px solid #F5F5F5
+}
+
+.shop-settings-wrapper .shop-settings-tabs li {
+	float: left;
+	margin-right: 10px
+}
+
+.shop-settings-wrapper .shop-settings-tabs li a {
+	padding: 0 5px;
+	display: block;
+	color: #999;
+	font-size: 14px
+}
+
+.shop-settings-wrapper .shop-settings-tabs li a:hover {
+	text-decoration: none;
+	color: #0085D7;
+	border-bottom: 3px solid #0085D7
+}
+
+.shop-settings-wrapper .shop-settings-tabs li.selected a {
+	color: #0085D7;
+	border-bottom: 3px solid #0085D7
+}
+
+.basic-setup-wrapper-iframe {
+	width: 988px;
+	border: 1px solid #E0E0E0;
+	border-top: none
+}

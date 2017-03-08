@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+
+.envelope{
+	background:url(/xmj/image/SellMode/envelope.png); 
+	height:10px;
+	width:14px; 
+	display:inline-block;
+}
+.short-cut-1{
+	background: no-repeat url(/xmj/image/SellMode/!!.png);
+	height:23px; 
+	width:21px; 
+	display:inline-block;
+	vertical-align:middle;
+}
+.short-cut-down{
+	background: url(/xmj/image/SellMode/down.png);
+	height:13px;
+	width:17px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.short-icon-close{
+	background:url(/xmj/image/SellMode/short-icont-close.png);
+	height:18px;
+	width:18px;
+	display:inline-block;
+}

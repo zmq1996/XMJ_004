@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yc.xmj.mapper.AdminMapper">
+	<!-- 结果集映射 -->
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage}"
+		ofType="User" select="getPaginationUsers"/>
+	</resultMap>
+	<!-- #是采用占位符   $是直接取到值 -->
+	<select id="getUsers" parameterType="PaginationBean" resultMap="PaginationBeanMap"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage from users
+	</select>
+	<select id="getPaginationUsers" resultType="User">
+		select * from
+		(select n.*,rownum rn from
+		(select * from users)n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize}
+	</select>
+		
+	<select id="getAdmin" parameterType="Admin" resultType="Admin">
+	    select * from admin where a_name=#{a_name} and  a_password = #{a_password}
+	</select>
+	<update id="modifyUser" parameterType="User" flushCache="false">
+		update users set u_name=#{u_name},u_password=#{u_password},u_sex=#{u_sex},
+		idcard=#{idcard},u_phone=#{u_phone},email=#{email},u_root=#{u_root},realNameAuthentication=#{realNameAuthentication},payAuthentication=#{payAuthentication}
+		where u_id=#{u_id}
+	</update>
+	<delete id="deleteUser" parameterType="User">
+		delete from users where u_id=#{u_id}
+	</delete>
+</mapper>

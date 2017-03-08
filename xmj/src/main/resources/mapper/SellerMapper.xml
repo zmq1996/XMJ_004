@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yc.xmj.mapper.SellerMapper">
+	<insert id="insertShop" parameterType="com.yc.xmj.entity.Shop">
+		<selectKey keyProperty="sid" keyColumn="current_sid" resultType="int" order="BEFORE">
+			select se_shop_sid.nextval current_sid from dual
+		</selectKey>
+		
+		insert into shop values(#{sid},#{sname},#{suid},null,null,
+							null,#{sbirthday},#{sstatus},null,null)
+	</insert>
+	
+	<update id="becomeSeller" parameterType="com.yc.xmj.entity.User">
+		update users set u_root=1 where u_id=#{u_id}
+	</update>
+	
+	<delete id="deleteShop" parameterType="com.yc.xmj.entity.Shop">
+		delete shop where sname=#{sname}
+	</delete>
+
+</mapper>

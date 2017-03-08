@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yc.xmj.mapper.UserMapper">
+	<select id="getUser" parameterType="com.yc.xmj.entity.User" resultType="com.yc.xmj.entity.User">
+	    select u_id,u_name,u_root from users where u_name=#{u_name} and  u_password = #{u_password}
+	</select>
+	
+	<insert id="register" parameterType="com.yc.xmj.entity.User">
+ 		insert into users(u_id,u_name,u_password,u_phone,u_root,realNameAuthentication,payAuthentication)
+ 		 values(users_seq.nextval,#{u_name},#{u_password},#{u_phone},0,0,0)
+ 	</insert>
+ 	
+ 	<insert id="insertAddress" parameterType="com.yc.xmj.entity.User">
+		<selectKey keyProperty="u_id" keyColumn="currval" resultType="int" order="BEFORE">
+			select u_id currval from users where u_name = #{u_name} 
+		</selectKey> 
+		insert into ADDRESS values(address_seq.nextval,null,#{u_id},null,null)
+	</insert>
+ 	
+ 	<insert id="insertShoppingBakcet" parameterType="com.yc.xmj.entity.User">
+		<selectKey keyProperty="u_id" keyColumn="currval" resultType="int" order="BEFORE">
+			select u_id currval from users where u_name = #{u_name} 
+		</selectKey> 
+		insert into shoppingBakcet values(shoppingBakcet_seq.nextval,#{u_id},null,null)
+	</insert>
+	
+	<!-- <select id="getTrolley" parameterType="com.yc.xmj.entity.User" resultType="com.yc.xmj.entity.Trolley">
+	    select sb.u_id,sb.sh_id,s_date,s_num,p_id,p_name,s_id,t_id,properties 
+	    from shoppingbakcet sb join 
+		(select sh_id,s_date,s_num,p.p_id,p_name,s_id,t_id,properties from shdetail st 
+		join product p on st.p_id = p.p_id ) st
+		on sb.sh_id = st.sh_id and u_id = #{u_id}
+	</select> -->
+	
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<result column="u_id" property="u_id"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage,u_id=u_id}"
+		ofType="com.yc.xmj.entity.Trolley" select="getPaginationTrolley"/>
+	</resultMap>
+	<!-- #是采用占位符   $是直接取到值 -->
+	<select id="getTrolley" parameterType="PaginationBean" resultMap="PaginationBeanMap"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage ,${u_id} u_id from (
+			select sb.u_id,sb.sh_id,s_date,s_num,p_id,p_name,s_id,t_id,properties 
+			from shoppingbakcet sb join (
+				select sh_id,s_date,s_num,p.p_id,p_name,s_id,t_id,properties 
+				from shdetail st join product p on st.p_id = p.p_id  order by  s_date desc) st
+				on sb.sh_id = st.sh_id and u_id = ${u_id} )
+	</select>
+	<select id="getPaginationTrolley" resultType="com.yc.xmj.entity.Trolley">
+		select * from
+		(select n.*,rownum rn from
+		(select * from (select sb.u_id,sb.sh_id,s_date,s_num,p_id,p_name,s_id,t_id,properties 
+		from shoppingbakcet sb join (select sh_id,s_date,s_num,p.p_id,p_name,s_id,t_id,properties 
+		from shdetail st join product p on st.p_id = p.p_id ) st
+		on sb.sh_id = st.sh_id and u_id = ${u_id}) )n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize} and s_num > 0
+	</select>
+	
+	
+	<update id="updateS_num" parameterType="int">
+		update shdetail set s_num = s_num -1 where p_id = #{p_id} and s_num > 0
+	</update>
+	
+	<select id="selectS_num" parameterType="int" resultType="int" >
+		select s_num  from shdetail where p_id = #{p_id}
+	</select>
+	
+	<delete id="deleteS_num" parameterType="int" >
+		delete shdetail where p_id = #{p_id}
+	</delete>
+	
+	<update id="addS_num" parameterType="int">
+		update shdetail set s_num = s_num +1 where p_id = #{p_id} and s_num > 0
+	</update>
+	
+	<resultMap type="PaginationBean" id="PaginationBeanMap2">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<result column="u_id" property="u_id"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage,u_id=u_id}"
+		ofType="com.yc.xmj.entity.OrderDetail" select="getPaginationOrderDetail"/>
+	</resultMap>
+	<!-- #是采用占位符   $是直接取到值 -->
+	<select id="getOrders" parameterType="PaginationBean" resultMap="PaginationBeanMap2"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage ,${u_id} u_id from (
+		select o_id,u_id,addr_name,introduce,addr_phone,odd_num,o_date,obuy_status,osale_status,p_id,p_name,s_id,t_id,properties from ORDERS o join 
+		(select odd_id,odd_oid,odd_num,odd_addr_id,p.p_id,p_name,s_id,t_id,properties from ORDERDETAIL od 
+		join product p on od.p_id = p.p_id) a 
+		on  o.o_id = a.odd_oid and u_id = ${u_id}
+		join users u on u.u_id = o.u_id 
+		join address addr on addr.addr_id = a.odd_addr_id)
+	</select>
+	<select id="getPaginationOrderDetail" resultType="com.yc.xmj.entity.OrderDetail">
+		select * from
+		(select n.*,rownum rn from
+		(select * from (
+		select o_id,u_id,addr_name,introduce,addr_phone,odd_num,o_date,obuy_status,osale_status,p_id,p_name,s_id,t_id,properties from ORDERS o join 
+		(select odd_id,odd_oid,odd_num,odd_addr_id,p.p_id,p_name,s_id,t_id,properties from ORDERDETAIL od 
+		join product p on od.p_id = p.p_id) a 
+		on  o.o_id = a.odd_oid and u_id = ${u_id}
+		join users u on u.u_id = o.u_id 
+		join address addr on addr.addr_id = a.odd_addr_id) )n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize} and odd_num > 0
+	</select>
+	
+	<resultMap type="com.yc.xmj.entity.ShdetailBean" id="ShdetailBeanMap">
+		<result column="u_id" property="u_id"/>
+		 <collection property="rows" column="u_id=u_id" 
+		 ofType="com.yc.xmj.entity.Shdetail"  select="getShdetail">
+		 </collection>
+	</resultMap>
+	<select id="getShdetailBean"  parameterType="PaginationBean" resultMap="ShdetailBeanMap">
+		select ${u_id} u_id from dual
+	</select>
+	<select id="getShdetail" resultType="com.yc.xmj.entity.Shdetail" >
+		select sh_id,p_id,s_num from SHDETAIL where sh_id = ${u_id}
+	</select>
+	
+	<insert id="placeOrder" parameterType="com.yc.xmj.entity.Orders">
+		<selectKey keyProperty="o_id" keyColumn="currval" resultType="int" order="BEFORE">
+			select o_id currval from orders where u_id = #{u_id} 
+		</selectKey> 
+		insert into ORDERDETAIL(odd_id,odd_oid,p_id,odd_num,odd_addr_id) 
+			select orderdetail_seq.nextval,#{o_id} odd_oid,p_id,s_num,sh_id from SHDETAIL 
+			where sh_id = #{u_id}  
+	</insert>
+	
+	<select id="getAddress" parameterType="int"  resultType="com.yc.xmj.entity.Address" >
+		select addr_id,u_id, addr_name, introduce, addr_phone, email  
+		from Address where addr_default = 1 and  u_id =  #{u_id}
+	</select>
+</mapper>
